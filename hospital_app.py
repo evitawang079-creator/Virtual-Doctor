@@ -234,11 +234,11 @@ with st.form("triage_form"):
     """, unsafe_allow_html=True)
     
     ch1, ch2, ch3, _ = st.columns(4)
-    with c1:
+    with ch1:
         hypertension = st.checkbox("High Blood Pressure")
-    with c2:    
+    with ch2:    
         heart_disease = st.checkbox("Heart Disease")
-    with c3:    
+    with ch3:    
         asthma = st.checkbox("Asthma")
         
     # TODO (logic): create 3 columns with 3 medical history checkboxes:
