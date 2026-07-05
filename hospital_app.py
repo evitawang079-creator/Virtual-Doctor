@@ -125,6 +125,21 @@ with st.form("triage_form"):
     </div>
     """, unsafe_allow_html=True)
 
+    c1, c2, c3, c4, = st.columns(4)
+    with c1:
+        fever = st.checkbox("Fever")
+        cough = st.checkbox("Cough")
+    with c2:    
+        headache = st.checkbox("Headache")
+        chest_pain = st.checkbox("Chest Pain")
+    with c3:    
+        stomach_pain = st.checkbox("Stomach Pain")
+        shortness_breath = st.checkbox("Shortness of Breath")
+    with c4   
+        nausea_vomitting = st.checkbox("Nausea")
+        dizziness = st.checkbox("Dizziness")
+        fever = st.checkbox("Fever")
+
     # TODO (logic): create 4 columns (st.columns(4)) with 9 symptom checkboxes.
     # The model needs THESE EXACT variable names (boolean type from st.checkbox):
     #   fever, cough, headache, chest_pain, stomach_pain,
