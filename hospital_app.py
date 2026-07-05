@@ -315,7 +315,7 @@ if submitted:
     #      unexpected values)
     #
     # 2. Copy `patient` into `patient_scaled`, then scale the columns listed in
-    #    `cols_to_scale` using `scaler.transform(...)`
+    #    `` using `scaler.transform(...)`
     #
     # 3. Predict:
     #      pred  = model.predict(patient_scaled[features])[0]
@@ -330,6 +330,10 @@ if submitted:
     # below are: patient, patient_scaled, pred, proba, dept_name, confidence,
     # info — make sure all of them exist before moving on to the display code.
 
+    patient_scaled = patient.copy()
+    patient_scaled[cols_to_scale] = scaler.transform(
+        patient[cols_to_scale]
+    )
 
     st.markdown("---")
     # TODO (text): replace CODENO28 and CODENO29
