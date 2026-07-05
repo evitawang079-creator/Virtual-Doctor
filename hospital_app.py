@@ -262,6 +262,12 @@ with st.form("triage_form"):
     </div>
     """, unsafe_allow_html=True)
 
+    col_age, col_gen = st.columns(2)
+    with col_age:
+        age = st.number_input("Age", min_value=1, max_value=121, value=35)
+    with col_gen:
+        gender = st.selectbox("Gender", options=['Female', 'Male'])
+
     # TODO (logic): create 2 columns with:
     #   age    -> min_value=1, max_value=120, default value=35
     #   gender -> Female, Male
