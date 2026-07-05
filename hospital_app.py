@@ -232,23 +232,15 @@ with st.form("triage_form"):
         </div>
     </div>
     """, unsafe_allow_html=True)
-    c1, c2, c3, c4, = st.columns(4)
+    
+    ch1, ch2, ch3, _ = st.columns(4)
     with c1:
-        fever = st.checkbox("Fever")
-        cough = st.checkbox("Cough")
+        hypertension = st.checkbox("High Blood Pressure")
     with c2:    
-        headache = st.checkbox("Headache")
-        chest_pain = st.checkbox("Chest Pain")
+        heart_disease = st.checkbox("Heart Disease")
     with c3:    
-        stomach_pain = st.checkbox("Stomach Pain")
-        shortness_breath = st.checkbox("Shortness of Breath")
-    with c4:   
-        nausea_vomitting = st.checkbox("Nausea")
-        dizziness = st.checkbox("Dizziness")
-    c5, _, _, _ = st.columns(4)
-    with c5:
-        skin_rash = st.checkbox("Skin Rash")
-
+        asthma = st.checkbox("Asthma")
+        
     # TODO (logic): create 3 columns with 3 medical history checkboxes:
     #   hypertension, heart_disease, asthma
     # Variable names must be EXACTLY as listed above.
