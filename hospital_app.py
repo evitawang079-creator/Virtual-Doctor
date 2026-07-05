@@ -136,7 +136,7 @@ with st.form("triage_form"):
         stomach_pain = st.checkbox("Stomach Pain")
         shortness_breath = st.checkbox("Shortness of Breath")
     with c4:   
-        nausea_vomitting = st.checkbox("Nausea")
+        nausea_vomiting = st.checkbox("Nausea")
         dizziness = st.checkbox("Dizziness")
     c5, _, _, _ = st.columns(4)
     with c5:
@@ -287,7 +287,7 @@ if submitted:
     'chest_pain' : int(chest_pain),
     'stomach_pain' : int(stomach_pain), 
     'shortness_breath' : int(shortness_breath), 
-    'nausea_vomitting' : int(nausea_vomitting), 
+    'nausea_vomitting' : int(nausea_vomiting), 
     'dizziness' : int(dizziness),
     'skin_rash' : int(skin_rash), 
     'temperature_level' : temp_map.get(temperature_level, 1), 
