@@ -198,7 +198,7 @@ with st.form("triage_form"):
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
             <span style="background:#000000;color:white;border-radius:8px;
                          padding:4px 10px;font-size:12px;font-weight:600;">3</span>
-            <span style="font-size:16px;font-weight:600;color:#ffffff;">How would you rate the severity?</span>
+            <span style="font-size:16px;font-weight:600;color:#726e6e;">How would you rate the severity?</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
