@@ -138,7 +138,9 @@ with st.form("triage_form"):
     with c4:   
         nausea_vomitting = st.checkbox("Nausea")
         dizziness = st.checkbox("Dizziness")
-        fever = st.checkbox("Fever")
+    c5, _, _, _ = st.columns(4)
+    with c5:
+        skin_rash = st.checkbox("Skin Rash")
 
     # TODO (logic): create 4 columns (st.columns(4)) with 9 symptom checkboxes.
     # The model needs THESE EXACT variable names (boolean type from st.checkbox):
